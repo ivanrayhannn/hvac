@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop Drawing VAC Ducting Restoran 5 PK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e9edf1; --panel:#ffffff; --ink:#17202b; --muted:#5c6a79; --line:#d3dae2; --field:#fbfcfd;
+  --accent:#1565c0; --warn:#b3261e; --warnbg:#fdecea; --ok:#1d7a46; --okbg:#e6f4ec; --chip:#f1f4f7; --sel:#d96a00;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10151b; --panel:#18202a; --ink:#e4e9ef; --muted:#97a4b3; --line:#2a3542; --field:#141b23;
+    --accent:#6fb0ff; --warn:#ff8a80; --warnbg:#3a1d1b; --ok:#6fd39a; --okbg:#173225; --chip:#1f2833; --sel:#ffa040;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10151b; --panel:#18202a; --ink:#e4e9ef; --muted:#97a4b3; --line:#2a3542; --field:#141b23;
+  --accent:#6fb0ff; --warn:#ff8a80; --warnbg:#3a1d1b; --ok:#6fd39a; --okbg:#173225; --chip:#1f2833; --sel:#ffa040;
+  color-scheme: dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif}
+.wrap{max-width:1600px;margin:0 auto;padding:18px 16px 40px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}
+h1{font-size:1.5rem;line-height:1.15;margin:0;font-weight:700}
+.sub{color:var(--muted);margin:4px 0 0;max-width:75ch}
+.layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:980px){.layout{grid-template-columns:1fr}}
+aside,.card{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+aside{padding:14px 16px}
+details{border-top:1px solid var(--line);padding:10px 0 4px}
+details:first-of-type{border-top:0;padding-top:0}
+summary{font-weight:600;cursor:pointer;padding:2px 0 6px}
+.row{display:grid;grid-template-columns:1fr 104px;align-items:center;gap:8px;margin:6px 0}
+.row.wide{grid-template-columns:1fr}
+.row label{font-size:.88rem;color:var(--muted)}
+input,select{width:100%;font:inherit;font-size:.88rem;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--field);color:var(--ink)}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+button{font:inherit;font-size:.86rem;font-weight:600;padding:6px 10px;border-radius:6px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.hint{font-size:.8rem;color:var(--muted);margin:6px 0 0}
+.selbox{background:var(--chip);border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:.88rem}
+.selbox b{display:block;font-size:.95rem;margin-bottom:2px}
+.selbox .k{color:var(--muted)}
+.card{padding:14px 16px;margin-bottom:16px}
+.card h2{font-size:1.05rem;margin:0 0 10px;font-weight:600}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.toolbar .grp{display:flex;gap:6px;align-items:center}
+.sheetwrap{overflow:auto;border-radius:6px;background:#6b7480;padding:12px;max-height:82vh}
+svg#sheet{display:block;background:#fff;touch-action:none;user-select:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+svg#sheet [data-drag]{cursor:grab}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--chip);border-radius:8px;padding:10px 12px}
+.stat b{display:block;font-size:1.2rem;font-weight:700;line-height:1.2}
+.stat small{color:var(--muted);font-size:.8rem}
+.stat.bad b{color:var(--warn)} .stat.good b{color:var(--ok)}
+.msgs{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px}
+.msgs li{padding:7px 10px;border-radius:6px;font-size:.86rem}
+.msgs li.w{background:var(--warnbg);color:var(--warn)}
+.msgs li.o{background:var(--okbg);color:var(--ok)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.84rem;font-variant-numeric:tabular-nums}
+table.sched th,table.sched td{border:1px solid var(--line);padding:5px 7px;white-space:nowrap}
+table.sched th{font-weight:700;text-align:center;background:var(--chip)}
+table.sched td.c{text-align:center} table.sched td.n{text-align:right}
+table.sched tr.sec td{font-weight:700}
+.hist{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px;max-height:320px;overflow:auto}
+.hist li{background:var(--chip);border-radius:8px;padding:8px 10px;font-size:.84rem}
+.hist li.cur{outline:2px solid var(--accent)}
+.hist li b{display:block;font-size:.9rem;word-break:break-word}
+.hist li .k{color:var(--muted);font-size:.78rem}
+.hist li .btns{margin-top:6px}
+.hist li button{padding:4px 8px;font-size:.8rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:1200px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Shop drawing VAC ducting, restoran 5 PK</h1>
+      <p class="sub">Denah arsitektur terkunci. Unit indoor, return grille, diffuser, exhaust fan, dan shaft pipa bisa digeser dan diedit. Ukuran duct, label, schedule, dan BOM ikut terhitung ulang.</p>
+    </div>
+    <div style="text-align:right">
+      <div class="btns" style="justify-content:flex-end">
+        <button class="primary" id="bPng" hidden>Unduh PNG (A3)</button>
+        <button id="bSvg" hidden>Unduh SVG</button>
+      </div>
+      <p class="hint" id="exMsg"></p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="selbox" id="selbox"></div>
+      <details open>
+        <summary>Unit AC ducted</summary>
+        <div class="row"><label for="pk">Kapasitas (PK)</label><input id="pk" data-k="pk" type="number" step="0.5" min="1"></div>
+        <div class="row"><label for="cfm">Airflow (CFM)</label><input id="cfm" data-k="cfm" type="number" step="50" min="200"></div>
+        <div class="row"><label for="esp">ESP unit (Pa)</label><input id="esp" data-k="esp" type="number" step="10" min="20"></div>
+        <div class="row"><label for="orient">Arah trunk</label>
+          <select id="orient"><option value="h">Horizontal</option><option value="v">Vertikal</option></select></div>
+      </details>
+      <details open>
+        <summary>Diffuser</summary>
+        <div class="row"><label for="rows">Baris</label><input id="rows" data-k="rows" type="number" step="1" min="1" max="5"></div>
+        <div class="row"><label for="cols">Kolom</label><input id="cols" data-k="cols" type="number" step="1" min="1" max="6"></div>
+        <div class="btns">
+          <button class="primary" id="bAuto">Atur grid ulang</button>
+          <button id="bAdd">Tambah diffuser</button>
+        </div>
+        <p class="hint">Klik objek HVAC di gambar untuk memilih, geser untuk memindah. Delete menghapus diffuser terpilih.</p>
+      </details>
+      <details>
+        <summary>Kriteria desain</summary>
+        <div class="row"><label for="occ">Jumlah orang</label><input id="occ" data-k="occ" type="number" step="1" min="0"></div>
+        <div class="row"><label for="bArea">BTU/h per m²</label><input id="bArea" data-k="bArea" type="number" step="50" min="0"></div>
+        <div class="row"><label for="bOrang">BTU/h per orang</label><input id="bOrang" data-k="bOrang" type="number" step="50" min="0"></div>
+        <div class="row"><label for="ductH">Tinggi trunk (mm)</label><input id="ductH" data-k="ductH" type="number" step="50" min="150"></div>
+        <div class="row"><label for="plenum">Ruang plafon (mm)</label><input id="plenum" data-k="plenum" type="number" step="50" min="200"></div>
+        <div class="row"><label for="vT">V trunk maks (m/s)</label><input id="vT" data-k="vT" type="number" step="0.5" min="2"></div>
+        <div class="row"><label for="vB">V flex maks (m/s)</label><input id="vB" data-k="vB" type="number" step="0.5" min="2"></div>
+        <div class="row"><label for="vR">V return grille (m/s)</label><input id="vR" data-k="vR" type="number" step="0.5" min="1"></div>
+        <div class="row"><label for="vE">V duct exhaust (m/s)</label><input id="vE" data-k="vE" type="number" step="0.5" min="2"></div>
+      </details>
+      <details>
+        <summary>Kop gambar</summary>
+        <div class="row wide"><label for="k_pemberi">Pemberi tugas</label><input id="k_pemberi" data-kop="pemberi"></div>
+        <div class="row wide"><label for="k_proyek">Proyek</label><input id="k_proyek" data-kop="proyek"></div>
+        <div class="row wide"><label for="k_lokasi">Lokasi</label><input id="k_lokasi" data-kop="lokasi"></div>
+        <div class="row wide"><label for="k_konsultan">Konsultan pengawas</label><input id="k_konsultan" data-kop="konsultan"></div>
+        <div class="row wide"><label for="k_kontraktor">Kontraktor pelaksana</label><input id="k_kontraktor" data-kop="kontraktor"></div>
+        <div class="row wide"><label for="k_drafter">Digambar</label><input id="k_drafter" data-kop="drafter"></div>
+        <div class="row wide"><label for="k_checker">Diperiksa</label><input id="k_checker" data-kop="checker"></div>
+        <div class="row"><label for="k_no">No. gambar</label><input id="k_no" data-kop="no"></div>
+        <div class="row"><label for="k_tahun">Tahun</label><input id="k_tahun" data-kop="tahun"></div>
+      </details>
+      <details open>
+        <summary>Riwayat desain</summary>
+        <div class="row wide"><label for="hName">Nama versi</label><input id="hName" placeholder="mis. Rev A, layout 2x3" maxlength="80"></div>
+        <div class="btns">
+          <button class="primary" id="bHSave">Simpan ke riwayat</button>
+          <button id="bHExp">Ekspor JSON</button>
+          <button id="bHImp">Impor JSON</button>
+          <input type="file" id="hFile" accept=".json,application/json" hidden>
+        </div>
+        <p class="hint" id="hMsg">Simpan kondisi gambar saat ini (posisi objek, parameter, kop) sebagai versi, lalu muat kembali kapan saja.</p>
+        <ul class="hist" id="hList"></ul>
+      </details>
+      <div class="btns" style="margin-top:12px"><button id="bReset">Reset semua</button></div>
+    </aside>
+
+    <main>
+      <section class="card">
+        <div class="toolbar">
+          <h2 style="margin:0">VAC D-201, instalasi VAC ducting lantai 1</h2>
+          <div class="grp">
+            <button id="zOut" aria-label="Perkecil">−</button>
+            <button id="zFit">Pas layar</button>
+            <button id="zIn" aria-label="Perbesar">+</button>
+          </div>
+        </div>
+        <div class="sheetwrap" id="sheetwrap"><svg id="sheet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1188"></svg></div>
+      </section>
+
+      <section class="card">
+        <h2>Ringkasan teknis</h2>
+        <div class="stats" id="stats"></div>
+        <ul class="msgs" id="msgs"></ul>
+      </section>
+
+      <section class="card">
+        <h2>VAC D-101, schedule selection AC unit</h2>
+        <div class="tbl"><table class="sched" id="tAc"></table></div>
+      </section>
+      <section class="card">
+        <h2>VAC D-102, schedule selection fan unit</h2>
+        <div class="tbl"><table class="sched" id="tFan"></table></div>
+      </section>
+
+      <div class="grid2">
+        <section class="card">
+          <h2>Ukuran duct per segmen</h2>
+          <div class="tbl"><table class="sched" id="tSeg"></table></div>
+        </section>
+        <section class="card">
+          <h2>Bill of material (estimasi)</h2>
+          <div class="tbl"><table class="sched" id="tBom"></table></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+// ---------- konstanta ----------
+const FLEX=[150,200,250,300,350];
+const DIFF=[[150,150],[250,225],[400,300],[600,375],[1e9,450]];
+const RG=[[600,300],[600,600],[900,450],[1000,500],[1200,500],[1200,600],[1500,600],[1800,600]];
+const CFM2M3S=0.000471947;
+const BLD={L:12,W:9};
+const DB={x0:0.1,y0:2.06,x1:7.94,y1:8.9}; // area R. Makan (dilayani AC 5 PK)
+const SH={W:1680,H:1188,s:80,ox:190,oy:260};
+const C={arch:'#8f8f8f',wall:'#505050',col:'#1e1e1e',grid:'#a9a9a9',ink:'#111111',sup:'#e3ecf8',exh:'#f4eadc',sel:'#ff7a00',furn:'#a6a6a6'};
+const DEF={pk:5,cfm:1600,esp:120,orient:'h',rows:2,cols:3,occ:24,bArea:500,bOrang:600,ductH:250,plenum:500,vT:5,vB:4.5,vR:2,vE:5,
+  unit:{x:0.6,y:5.5},ret:{x:0.65,y:3.0},shaft:{x:0.35,y:8.4},diffusers:[],
+  efs:[
+    {tag:'EF 1.1',room:'Toilet Pria',type:'Ceiling Mounted Sirocco',cfm:100,esp:50,x:1.3,y:1.2},
+    {tag:'EF 1.2',room:'Toilet Wanita',type:'Ceiling Mounted Sirocco',cfm:100,esp:50,x:3.3,y:1.2},
+    {tag:'EF 1.3',room:'Dapur (Kitchen Hood)',type:'In Line Fan',cfm:1500,esp:250,x:10,y:0.6}],
+  kop:{pemberi:'PEMILIK RESTORAN',proyek:'PEMBANGUNAN RESTORAN',lokasi:'Jakarta',konsultan:'-',kontraktor:'-',drafter:'-',checker:'-',no:'VAC D-201',tahun:'2026'}};
+const KEY='duct-resto-shop-v2';
+const $=s=>document.querySelector(s);
+const clone=o=>JSON.parse(JSON.stringify(o));
+const snap=v=>Math.round(v*20)/20;
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const f1=v=>v.toLocaleString('id-ID',{minimumFractionDigits:1,maximumFractionDigits:1});
+const f2=v=>v.toLocaleString('id-ID',{minimumFractionDigits:2,maximumFractionDigits:2});
+const f0=v=>Math.round(v).toLocaleString('id-ID');
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+let S,sel=null,drag=null,lastR=null,lastBom=[],zoom=0;
+
+function normState(o){if(o&&typeof o==='object'&&Array.isArray(o.diffusers)&&Array.isArray(o.efs)){const d=Object.assign(clone(DEF),clone(o));d.kop=Object.assign(clone(DEF.kop),o.kop||{});return d;}return null;}
+function load(){try{const t=localStorage.getItem(KEY);if(t)return normState(JSON.parse(t));}catch(e){}return null;}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+const A=p=>S.orient==='h'?p.x:p.y;
+const Cc=p=>S.orient==='h'?p.y:p.x;
+const XY=(a,c)=>S.orient==='h'?{x:a,y:c}:{x:c,y:a};
+
+function inDB(p,m=0.2){p.x=clamp(p.x,DB.x0+m,DB.x1-m);p.y=clamp(p.y,DB.y0+m,DB.y1-m);}
+function autoLayout(){
+  const r=Math.max(1,S.rows|0),c=Math.max(1,S.cols|0);
+  const a0b=S.orient==='h'?DB.x0:DB.y0,a1b=S.orient==='h'?DB.x1:DB.y1,c0=S.orient==='h'?DB.y0:DB.x0,c1=S.orient==='h'?DB.y1:DB.x1;
+  const ua=A(S.unit);let a0,a1;
+  if(ua<(a0b+a1b)/2){a0=Math.min(ua+1,a1b-0.5);a1=a1b;}else{a0=a0b;a1=Math.max(ua-1,a0b+0.5);}
+  S.diffusers=[];let id=1;
+  for(let j=0;j<r;j++)for(let i=0;i<c;i++){
+    const p=XY(a0+(i+0.5)*(a1-a0)/c,c0+(j+0.5)*(c1-c0)/r);
+    S.diffusers.push({id:id++,x:snap(p.x),y:snap(p.y)});
+  }
+  if(sel&&sel.type==='diff')sel=null;
+}
+function placeUnit(){
+  if(S.orient==='h'){S.unit={x:0.6,y:5.5};S.ret={x:0.65,y:3.0};}
+  else{S.unit={x:4.0,y:2.6};S.ret={x:6.6,y:2.6};}
+}
+const diffSize=q=>DIFF.find(d=>q<=d[0])[1];
+const pipeSize=pk=>pk<=1?[9.52,6.35]:pk<=2.5?[12.7,6.35]:pk<=6?[15.88,9.52]:[19.05,9.52];
+
+// ---------- perhitungan ----------
+function compute(){
+  const n=S.diffusers.length,qd=n?S.cfm/n:0,h=S.ductH/1000,ua=A(S.unit),uc=Cc(S.unit);
+  const segs=[],brs=[];let maxP=0,sides=0;
+  [['A',1],['B',-1]].forEach(([nm,dir])=>{
+    const ds=S.diffusers.filter(d=>dir>0?A(d)>=ua:A(d)<ua).map(d=>({d,dist:Math.abs(A(d)-ua)})).sort((a,b)=>a.dist-b.dist);
+    if(!ds.length)return;sides++;
+    const pos=[];
+    ds.forEach(o=>{if(!pos.length||o.dist-pos[pos.length-1]>0.05)pos.push(o.dist);o.k=pos.length-1;});
+    let prev=0,cum=0,k1=0;const cumAt=[];
+    pos.forEach((p,k)=>{
+      const q=ds.filter(o=>o.k>=k).length*qd,qs=q*CFM2M3S,len=p-prev;
+      const w=Math.max(0.15,Math.ceil((qs/S.vT)/h/0.05-1e-9)*0.05);
+      const v=qs/(w*h),De=1.30*Math.pow(w*h,0.625)/Math.pow(w+h,0.25),fr=0.02/De*0.6*v*v;
+      cum+=fr*len;cumAt[k]=cum;
+      if(len>0.01){k1++;segs.push({name:'S-'+nm+k1,dir,from:prev,to:p,len,q,w,h,v,fr});}
+      prev=p;
+    });
+    ds.forEach(o=>{
+      const L=Math.abs(Cc(o.d)-uc)+0.5,qs=qd*CFM2M3S;
+      const D=FLEX.find(dm=>qs/(Math.PI*(dm/1000)**2/4)<=S.vB)||350;
+      const v=qs/(Math.PI*(D/1000)**2/4),fr=0.035/(D/1000)*0.6*v*v,P=cumAt[o.k]+fr*L;
+      brs.push({d:o.d,ta:A(o.d),L,D,v,fr,P,q:qd,size:diffSize(qd)});
+      if(P>maxP)maxP=P;
+    });
+  });
+  const area=(DB.x1-DB.x0)*(DB.y1-DB.y0),load=area*S.bArea+S.occ*S.bOrang,cap=S.pk*9000;
+  const espEst=n?maxP*2+15+15+20:0;
+  const gross=S.cfm*CFM2M3S/S.vR/0.7;
+  const rg=RG.find(g=>g[0]*g[1]/1e6>=gross)||RG[RG.length-1];
+  const faLs=S.occ*3.8+area*0.9;
+  const exs=S.efs.map(f=>{
+    const opts=[{d:f.x,wx:0,wy:f.y,ax:'x'},{d:BLD.L-f.x,wx:BLD.L,wy:f.y,ax:'x'},{d:f.y,wx:f.x,wy:0,ax:'y'},{d:BLD.W-f.y,wx:f.x,wy:BLD.W,ax:'y'}];
+    const wl=opts.sort((a,b)=>a.d-b.d)[0],qs=f.cfm*CFM2M3S,ar=qs/S.vE;
+    const dh=ar<=0.03?0.15:ar<=0.08?0.2:0.3,dw=Math.max(dh,Math.ceil(ar/dh/0.05-1e-9)*0.05);
+    return {f,wl,len:Math.max(0.3,wl.d),w:dw,h:dh,v:qs/(dw*dh)};
+  });
+  return {n,qd,segs,brs,maxP,espEst,area,load,cap,rg,faLs,sides,exs,cfmTR:S.cfm/(cap/12000)};
+}
+
+// ---------- gambar ----------
+const X=x=>SH.ox+x*SH.s,Y=y=>SH.oy+y*SH.s,P=v=>v*SH.s;
+function T(x,y,str,o={}){
+  return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${o.fs||10}"${o.a?` text-anchor="${o.a}"`:''}${o.b?' font-weight="700"':''}${o.halo?' paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"':''}${o.rot!=null?` transform="rotate(${o.rot} ${x.toFixed(1)} ${y.toFixed(1)})"`:''} fill="${o.c||C.ink}">${esc(str)}</text>`;
+}
+const L=(x1,y1,x2,y2,c,w,dash)=>`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${c}" stroke-width="${w}"${dash?` stroke-dasharray="${dash}"`:''}/>`;
+const R=(x,y,w,h,f,c,sw,extra='')=>`<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" fill="${f}" stroke="${c}" stroke-width="${sw}"${extra}/>`;
+function wrap(str,n){const w=String(str).split(/\s+/),out=[];let cur='';w.forEach(x=>{if((cur+' '+x).trim().length>n){if(cur)out.push(cur);cur=x;}else cur=(cur+' '+x).trim();});if(cur)out.push(cur);return out.length?out:[''];}
+
+function archSVG(){
+  let o='';
+  const gx=[[0,'A'],[4,'B'],[8,'C'],[12,'D']],gy=[[0,'3'],[4.5,'2'],[9,'1']];
+  // grid
+  gx.forEach(([x,l])=>{o+=L(X(x),Y(-1.35),X(x),Y(9.35),C.grid,0.8,'16 4 2 4');o+=`<circle cx="${X(x)}" cy="${Y(-1.6)}" r="15" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`+T(X(x),Y(-1.6)+5,l,{fs:13,a:'middle',b:1});});
+  gy.forEach(([y,l])=>{o+=L(X(-1.35),Y(y),X(12.35),Y(y),C.grid,0.8,'16 4 2 4');o+=`<circle cx="${X(-1.6)}" cy="${Y(y)}" r="15" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`+T(X(-1.6),Y(y)+5,l,{fs:13,a:'middle',b:1});});
+  // dimensi
+  const dy=Y(-0.75),dyT=Y(-1.05);
+  o+=L(X(0),dy,X(12),dy,C.ink,0.7)+L(X(0),dyT,X(12),dyT,C.ink,0.7);
+  gx.forEach(([x])=>{o+=L(X(x)-4,dy+4,X(x)+4,dy-4,C.ink,1)+L(X(x),dy-6,X(x),dy+6,C.ink,0.7);});
+  [0,12].forEach(x=>{o+=L(X(x)-4,dyT+4,X(x)+4,dyT-4,C.ink,1);});
+  for(let i=0;i<gx.length-1;i++)o+=T((X(gx[i][0])+X(gx[i+1][0]))/2,dy-5,String((gx[i+1][0]-gx[i][0])*100),{fs:10,a:'middle'});
+  o+=T(X(6),dyT-5,'1200',{fs:10,a:'middle'});
+  const dx=X(-0.75),dxT=X(-1.05);
+  o+=L(dx,Y(0),dx,Y(9),C.ink,0.7)+L(dxT,Y(0),dxT,Y(9),C.ink,0.7);
+  gy.forEach(([y])=>{o+=L(dx-4,Y(y)+4,dx+4,Y(y)-4,C.ink,1)+L(dx-6,Y(y),dx+6,Y(y),C.ink,0.7);});
+  [0,9].forEach(y=>{o+=L(dxT-4,Y(y)+4,dxT+4,Y(y)-4,C.ink,1);});
+  for(let i=0;i<gy.length-1;i++){const yy=(Y(gy[i][0])+Y(gy[i+1][0]))/2;o+=T(dx-5,yy,String((gy[i+1][0]-gy[i][0])*100),{fs:10,a:'middle',rot:-90});}
+  o+=T(dxT-5,Y(4.5),'900',{fs:10,a:'middle',rot:-90});
+  // furnitur
+  const F=C.furn;
+  [[1.7,3.7],[4.0,3.7],[6.3,3.7],[1.7,7.2],[4.0,7.6],[6.3,7.2]].forEach(([cx,cy])=>{
+    o+=R(X(cx-0.4),Y(cy-0.4),P(0.8),P(0.8),'none',F,0.8);
+    [[0,-0.62],[0,0.62],[-0.62,0],[0.62,0]].forEach(([ax,ay])=>{o+=R(X(cx+ax-0.18),Y(cy+ay-0.16),P(0.36),P(0.32),'none',F,0.7);});
+  });
+  o+=R(X(8.2),Y(0.15),P(2.7),P(0.6),'none',F,0.8)+R(X(11.25),Y(1.2),P(0.6),P(4.0),'none',F,0.8);
+  [9.5,10.2].forEach(cx=>{o+=`<circle cx="${X(cx)}" cy="${Y(0.45)}" r="${P(0.17)}" fill="none" stroke="${F}" stroke-width="0.8"/>`;});
+  o+=R(X(11.35),Y(1.7),P(0.4),P(0.6),'none',F,0.8)+`<circle cx="${X(11.55)}" cy="${Y(2.0)}" r="${P(0.12)}" fill="none" stroke="${F}" stroke-width="0.7"/>`;
+  o+=R(X(9.0),Y(0.1),P(1.9),P(1.0),'none',C.arch,1,' stroke-dasharray="6 3"')+T(X(9.95),Y(1.32),'KITCHEN HOOD',{fs:8,a:'middle',c:'#666'});
+  o+=R(X(9.0),Y(6.35),P(2.6),P(0.5),'none',F,0.8)+T(X(10.3),Y(6.68),'COUNTER',{fs:7.5,a:'middle',c:'#777'});
+  o+=R(X(4.2),Y(0.15),P(3.6),P(0.45),'none',F,0.8);
+  [[0.2],[2.2]].forEach(([x0])=>{o+=R(X(x0),Y(0.2),P(0.42),P(0.3),'none',F,0.8)+`<ellipse cx="${X(x0+0.21)}" cy="${Y(0.78)}" rx="${P(0.2)}" ry="${P(0.28)}" fill="none" stroke="${F}" stroke-width="0.8"/>`;
+    o+=R(X(x0+1.1),Y(0.15),P(0.5),P(0.4),'none',F,0.8);});
+  // dinding
+  const walls=[[0,0,11,0,0.2],[11.8,0,12,0,0.2],[0,9,3.2,9,0.2],[4.8,9,12,9,0.2],[0,0,0,9,0.2],[12,0,12,9,0.2],
+    [0,2,0.6,2,0.12],[1.4,2,2.6,2,0.12],[3.4,2,5.6,2,0.12],[6.4,2,8,2,0.12],[2,0,2,2,0.12],[4,0,4,2,0.12],
+    [8,0,8,3.0,0.12],[8,3.9,8,6.5,0.12],[8,7.6,8,9,0.12],[8,5.5,9,5.5,0.12],[9.9,5.5,12,5.5,0.12]];
+  walls.forEach(([x1,y1,x2,y2,t])=>{
+    if(y1===y2)o+=R(X(Math.min(x1,x2)-(x1===0||x2===12?t/2:0)),Y(y1-t/2),P(Math.abs(x2-x1)+((x1===0)?t/2:0)+((x2===12)?t/2:0)),P(t),C.wall,C.ink,0.6);
+    else o+=R(X(x1-t/2),Y(Math.min(y1,y2)),P(t),P(Math.abs(y2-y1)),C.wall,C.ink,0.6);
+  });
+  // jendela
+  [[0.8,2.7],[5.4,7.4],[8.6,11.4]].forEach(([a,b])=>{o+=R(X(a),Y(8.9),P(b-a),P(0.2),'#fff',C.ink,0.7)+L(X(a),Y(9),X(b),Y(9),C.ink,0.6);});
+  // kolom
+  gx.forEach(([x])=>gy.forEach(([y])=>{o+=R(X(x-0.2),Y(y-0.2),P(0.4),P(0.4),C.col,C.col,0.5);}));
+  // pintu
+  const door=(hx,hy,w,a0,a1)=>{const r=a=>a*Math.PI/180,px=X(hx+w*Math.cos(r(a0))),py=Y(hy+w*Math.sin(r(a0))),qx=X(hx+w*Math.cos(r(a1))),qy=Y(hy+w*Math.sin(r(a1)));
+    const sw=((a1-a0+360)%360)<180?1:0;return L(X(hx),Y(hy),qx,qy,C.ink,1)+`<path d="M${px.toFixed(1)} ${py.toFixed(1)} A${P(w)} ${P(w)} 0 0 ${sw} ${qx.toFixed(1)} ${qy.toFixed(1)}" fill="none" stroke="${C.arch}" stroke-width="0.7"/>`;};
+  o+=door(0.6,2,0.8,0,-90)+door(2.6,2,0.8,0,-90)+door(5.6,2,0.8,0,-90)+door(8,3.0,0.9,90,0)+door(9,5.5,0.9,0,90)+door(11.8,0,0.8,180,90)+door(3.2,9,0.8,0,-90)+door(4.8,9,0.8,180,-90);
+  // nama ruang
+  const rl=(x,y,n)=>T(X(x),Y(y),n,{fs:10,a:'middle',b:1,halo:1})+T(X(x),Y(y)+11,'EL±0.00',{fs:7.5,a:'middle',halo:1,c:'#444'});
+  o+=rl(1,1.75,'TOILET PRIA')+rl(3,1.75,'TOILET WANITA')+rl(5.0,1.15,'GUDANG')+rl(10,3.4,'DAPUR')+rl(10.3,7.9,'KASIR & BAR')+rl(5.4,8.45,'R. MAKAN');
+  o+=T(X(4),Y(9)+30,'ENTRANCE',{fs:8,a:'middle',c:'#555'});
+  return o;
+}
+
+function hvacSVG(Rz){
+  let o='';const I=C.ink,ua=A(S.unit),uc=Cc(S.unit);
+  const selIs=(t,id)=>sel&&sel.type===t&&(id===undefined||sel.id===id);
+  // pipa refrigerant & drain
+  const ux=X(S.unit.x),uy=Y(S.unit.y),sx=X(S.shaft.x),sy=Y(S.shaft.y);
+  o+=`<path d="M${ux} ${uy} H${sx} V${sy}" fill="none" stroke="${I}" stroke-width="1.4"/>`;
+  o+=`<path d="M${ux} ${uy+6} H${sx+6} V${sy}" fill="none" stroke="${I}" stroke-width="1" stroke-dasharray="7 3"/>`;
+  const ps=pipeSize(S.pk);
+  const pTxt=`G Ø${String(ps[0]).replace('.',',')} / L Ø${String(ps[1]).replace('.',',')}`;
+  if(Math.abs(uy-sy)>Math.abs(ux-sx))o+=T(sx+(sx<ux?-5:12),(uy+sy)/2,pTxt,{fs:8,a:'middle',halo:1,rot:-90});
+  else o+=T((ux+sx)/2,uy-6,pTxt,{fs:8,a:'middle',halo:1});
+  // shaft
+  o+=`<g data-drag="shaft">`+R(sx-P(0.2),sy-P(0.2),P(0.4),P(0.4),'#fff',I,1.2)+L(sx-P(0.2),sy-P(0.2),sx+P(0.2),sy+P(0.2),I,0.8)+L(sx+P(0.2),sy-P(0.2),sx-P(0.2),sy+P(0.2),I,0.8)
+    +T(sx+P(0.3),sy-4,'SHAFT',{fs:8,b:1,halo:1})+T(sx+P(0.3),sy+7,'ke OU di atap',{fs:7.5,halo:1})+`</g>`;
+  // exhaust
+  Rz.exs.forEach((e,i)=>{
+    const f=e.f,fx=X(f.x),fy=Y(f.y),wx=X(e.wl.wx),wy=Y(e.wl.wy),wpx=P(e.w);
+    o+=`<line x1="${fx}" y1="${fy}" x2="${wx}" y2="${wy}" stroke="${I}" stroke-width="${wpx}"/><line x1="${fx}" y1="${fy}" x2="${wx}" y2="${wy}" stroke="${C.exh}" stroke-width="${Math.max(1,wpx-2.4)}"/>`;
+    const lw=e.wl.ax==='x'?P(0.3):wpx+8,lh=e.wl.ax==='x'?wpx+8:P(0.3);
+    o+=R(wx-lw/2,wy-lh/2,lw,lh,'#fff',I,1);
+    for(let k=1;k<4;k++){o+=e.wl.ax==='x'?L(wx-lw/2+lw*k/4,wy-lh/2,wx-lw/2+lw*k/4,wy+lh/2,I,0.6):L(wx-lw/2,wy-lh/2+lh*k/4,wx+lw/2,wy-lh/2+lh*k/4,I,0.6);}
+    const ealTxt=`EAL ${Math.round(e.w*1000+100)}x${Math.round(e.h*1000+100)}`;
+    o+=e.wl.ax==='x'?T(wx+(e.wl.wx===0?-8:8),wy-lh/2-4,ealTxt,{fs:8,a:e.wl.wx===0?'end':'start',halo:1}):T(wx+lw/2+4,wy+(e.wl.wy===0?-6:14),ealTxt,{fs:8,halo:1});
+    const mx=(fx+wx)/2,my=(fy+wy)/2,rot=e.wl.ax==='y'?-90:0;
+    if(e.len>0.6)o+=T(mx+(rot?-wpx/2-4:0),my-(rot?0:wpx/2+4),`${Math.round(e.w*1000)}x${Math.round(e.h*1000)} mm`,{fs:8,a:'middle',halo:1,rot:rot||null});
+    const s=P(0.45),isS=selIs('ef',i);
+    o+=`<g data-drag="ef" data-id="${i}">`+R(fx-s/2,fy-s/2,s,s,'#fff',isS?C.sel:I,isS?2.4:1.2)+`<circle cx="${fx}" cy="${fy}" r="${s*0.32}" fill="none" stroke="${I}" stroke-width="0.9"/>`
+      +L(fx-s*0.32,fy,fx+s*0.32,fy,I,0.7)+L(fx,fy-s*0.32,fx,fy+s*0.32,I,0.7)
+      +T(fx+s/2+4,fy+s/2+9,f.tag,{fs:9,b:1,halo:1})+T(fx+s/2+4,fy+s/2+19,`${f.cfm} cfm`,{fs:8,halo:1})+`</g>`;
+  });
+  // branch
+  Rz.brs.forEach(b=>{
+    const t=XY(b.ta,uc),tx=X(t.x),ty=Y(t.y),dx=X(b.d.x),dy=Y(b.d.y),w=P(b.D/1000);
+    o+=`<line x1="${tx}" y1="${ty}" x2="${dx}" y2="${dy}" stroke="${I}" stroke-width="${w}"/><line x1="${tx}" y1="${ty}" x2="${dx}" y2="${dy}" stroke="${C.sup}" stroke-width="${Math.max(1,w-2.2)}"/>`;
+    const len=Math.hypot(dx-tx,dy-ty)||1,ux1=(dx-tx)/len,uy1=(dy-ty)/len,vx=tx+ux1*Math.min(P(0.45),len*0.4),vy=ty+uy1*Math.min(P(0.45),len*0.4);
+    o+=L(vx-uy1*(w/2+3),vy+ux1*(w/2+3),vx+uy1*(w/2+3),vy-ux1*(w/2+3),I,1.2);
+  });
+  // trunk
+  Rz.segs.forEach(s=>{
+    const a0=s.dir>0?ua+s.from:ua-s.to,a1=s.dir>0?ua+s.to:ua-s.from;
+    if(S.orient==='h')o+=R(X(a0),Y(uc-s.w/2),P(a1-a0),P(s.w),C.sup,I,1.2);
+    else o+=R(X(uc-s.w/2),Y(a0),P(s.w),P(a1-a0),C.sup,I,1.2);
+  });
+  Rz.segs.forEach(s=>{
+    const am=ua+s.dir*(s.from+s.to)/2,p=XY(am,uc);
+    if(S.orient==='h')o+=T(X(p.x),Y(uc-s.w/2)-5,`${Math.round(s.w*1000)}x${Math.round(s.h*1000)} mm`,{fs:9,a:'middle',halo:1});
+    else o+=T(X(uc-s.w/2)-5,Y(p.y),`${Math.round(s.w*1000)}x${Math.round(s.h*1000)} mm`,{fs:9,a:'middle',halo:1,rot:-90});
+  });
+  // diffuser
+  let typDone=false;
+  Rz.brs.slice().sort((a,b)=>S.diffusers.indexOf(a.d)-S.diffusers.indexOf(b.d)).forEach(b=>{
+    const d=b.d,s=P(b.size/1000),x=X(d.x),y=Y(d.y),isS=selIs('diff',d.id),i2=s*0.3;
+    o+=`<g data-drag="diff" data-id="${d.id}">`+R(x-s/2-6,y-s/2-6,s+12,s+12,'transparent','none',0);
+    o+=R(x-s/2,y-s/2,s,s,'#fff',isS?C.sel:I,isS?2.4:1.2)+R(x-i2,y-i2,i2*2,i2*2,'none',I,0.7);
+    o+=L(x-s/2,y-s/2,x-i2,y-i2,I,0.6)+L(x+s/2,y-s/2,x+i2,y-i2,I,0.6)+L(x-s/2,y+s/2,x-i2,y+i2,I,0.6)+L(x+s/2,y+s/2,x+i2,y+i2,I,0.6);
+    o+=T(x,y+s/2+11,`${Math.round(b.q)} cfm`,{fs:8.5,a:'middle',halo:1});
+    if(!typDone){typDone=true;const lx=x+s/2+30,ly=y-s/2-22;
+      o+=L(x+s/2,y-s/2,lx,ly,I,0.7)+L(lx,ly,lx+78,ly,I,0.7)+T(lx+2,ly-13,'Typ.',{fs:8,halo:1})+T(lx+2,ly-3,`Sq.Diff ${b.size}x${b.size} mm`,{fs:8.5,halo:1})+T(lx+2,ly+10,`flex Ø${b.D} c/w VD`,{fs:7.5,halo:1});}
+    o+=`</g>`;
+  });
+  // return grille
+  const rw=P((S.orient==='h'?Rz.rg[1]:Rz.rg[0])/1000),rh=P((S.orient==='h'?Rz.rg[0]:Rz.rg[1])/1000),rx=X(S.ret.x),ry=Y(S.ret.y),rS=selIs('ret');
+  o+=`<g data-drag="ret">`+R(rx-rw/2,ry-rh/2,rw,rh,'#fff',rS?C.sel:I,rS?2.4:1.2);
+  for(let k=1;k<8;k++){o+=S.orient==='h'?L(rx-rw/2+2,ry-rh/2+rh*k/8,rx+rw/2-2,ry-rh/2+rh*k/8,I,0.6):L(rx-rw/2+rw*k/8,ry-rh/2+2,rx-rw/2+rw*k/8,ry+rh/2-2,I,0.6);}
+  o+=T(rx+rw/2+5,ry-2,'RBG',{fs:9,b:1,halo:1})+T(rx+rw/2+5,ry+9,`${Rz.rg[0]}x${Rz.rg[1]} mm`,{fs:8,halo:1})+`</g>`;
+  // unit indoor
+  const uw=P(S.orient==='h'?0.7:1.4),uh=P(S.orient==='h'?1.4:0.7),uS=selIs('unit');
+  o+=`<g data-drag="unit">`+R(ux-uw/2,uy-uh/2,uw,uh,'#fff',uS?C.sel:I,uS?2.6:1.6)+L(ux-uw/2,uy-uh/2,ux+uw/2,uy+uh/2,I,0.8)+L(ux+uw/2,uy-uh/2,ux-uw/2,uy+uh/2,I,0.8);
+  const tx=ux+uw/2+6,ty=uy+uh/2+12;
+  o+=T(tx,ty,'IU 1.1',{fs:10,b:1,halo:1})+T(tx,ty+11,`${f0(S.pk*9000).replace(/\./g,'')} BTU/h`,{fs:8.5,halo:1})+T(tx,ty+21,`${Math.round(S.cfm)} cfm`,{fs:8.5,halo:1})+`</g>`;
+  return o;
+}
+
+function legendSVG(){
+  const x0=1170,y0=250,w=172;let o='',y=y0;
+  o+=T(x0,y-8,'LEGEND :',{fs:12,b:1});
+  const rows=[['IU','INDOOR UNIT VAC'],['OU','OUTDOOR UNIT VAC'],['BTU/h','BRITISH THERMAL UNIT/HOUR'],['CFM','CUBIC FEET / MINUTE'],['Sq.Diff','SUPPLY SQUARE DIFFUSER'],['RBG','RETURN BAR GRILLE'],['EF','EXHAUST FAN'],['EAL','EXHAUST AIR LOUVER'],['VD','VOLUME DAMPER'],['G.','GAS REFRIGERANT PIPE'],['L.','LIQUID REFRIGERANT PIPE'],['Typ','TYPICAL ITEM'],
+    ['sym:sup','SUPPLY AIR DUCT'],['sym:exh','EXHAUST AIR DUCT'],['sym:ref','REFRIGERANT PIPE'],['sym:drn','DRAIN PIPE c/w INSULATION']];
+  const rh=16;
+  o+=R(x0,y,w,rows.length*rh,'#fff',C.ink,1)+L(x0+42,y,x0+42,y+rows.length*rh,C.ink,0.7);
+  rows.forEach(([k,v],i)=>{
+    const yy=y+i*rh;if(i)o+=L(x0,yy,x0+w,yy,C.ink,0.5);
+    if(k==='sym:sup')o+=R(x0+5,yy+5,32,6,C.sup,C.ink,0.8);
+    else if(k==='sym:exh')o+=R(x0+5,yy+5,32,6,C.exh,C.ink,0.8);
+    else if(k==='sym:ref')o+=L(x0+5,yy+8,x0+37,yy+8,C.ink,1.4);
+    else if(k==='sym:drn')o+=L(x0+5,yy+8,x0+37,yy+8,C.ink,1,'5 3');
+    else o+=T(x0+4,yy+11.5,k,{fs:7.5,b:1});
+    o+=T(x0+46,yy+11.5,v,{fs:7});
+  });
+  y+=rows.length*rh+28;
+  o+=T(x0,y,'CATATAN :',{fs:10,b:1});y+=6;
+  const notes=['Ukuran duct dalam mm (lebar x tinggi).','Duct supply galvanis c/w insulasi 25 mm.','Setiap branch diffuser dipasang volume damper (VD).','Exhaust dapur sistem terpisah, tidak terhubung ke ducting AC.','Fresh air disalurkan ke sisi return unit.','Pipa drain kemiringan min. 1%.','Ukuran dicek ulang dengan katalog unit dan diffuser terpilih.'];
+  notes.forEach((n,i)=>{wrap(n,38).forEach((ln,j)=>{y+=11;o+=T(x0+(j?10:0),y,(j?'':(i+1)+'. ')+ln,{fs:7.5});});});
+  return o;
+}
+
+function titleSVG(){
+  const k=S.kop,x0=1352,x1=1660,w=x1-x0;let o='',y=20;
+  o+=R(x0,20,w,1148,'#fff',C.ink,1.4);
+  const band=(label)=>{o+=R(x0,y,w,20,'#fff',C.ink,0.8)+T(x0+w/2,y+14,label,{fs:10,a:'middle'});y+=20;};
+  const val=(txt,h,fs=9,b=0)=>{o+=R(x0,y,w,h,'#fff',C.ink,0.8);const ls=wrap(txt,40);ls.forEach((ln,i)=>{o+=T(x0+w/2,y+h/2+(i-(ls.length-1)/2)*(fs+3)+fs/3,ln,{fs,a:'middle',b});});y+=h;};
+  band('PEMBERI TUGAS');val(k.pemberi,44,9,1);
+  band('PROYEK');val(k.proyek,52,10,1);
+  band('LOKASI');val(k.lokasi,48,9);
+  band('KONSULTAN PENGAWAS');val(k.konsultan,60,9,1);
+  band('KONTRAKTOR PELAKSANA');val(k.kontraktor,60,9,1);
+  o+=R(x0,y,w/2,20,'#fff',C.ink,0.8)+R(x0+w/2,y,w/2,20,'#fff',C.ink,0.8)+T(x0+w/4,y+14,'DIGAMBAR',{fs:9,a:'middle'})+T(x0+3*w/4,y+14,'DIPERIKSA',{fs:9,a:'middle'});y+=20;
+  o+=R(x0,y,w/2,80,'#fff',C.ink,0.8)+R(x0+w/2,y,w/2,80,'#fff',C.ink,0.8);
+  o+=T(x0+w/4,y+66,k.drafter,{fs:9,a:'middle',b:1})+T(x0+3*w/4,y+66,k.checker,{fs:9,a:'middle',b:1});y+=80;
+  o+=R(x0,y,w,56,'#fff',C.ink,0.8)+T(x0+w/2,y+38,'SHOP DRAWING',{fs:26,a:'middle'});y+=56;
+  o+=R(x0,y,w*0.6,20,'#fff',C.ink,0.8)+R(x0+w*0.6,y,w*0.24,20,'#fff',C.ink,0.8)+R(x0+w*0.84,y,w*0.16,20,'#fff',C.ink,0.8)
+    +T(x0+w*0.3,y+14,'KETERANGAN',{fs:8.5,a:'middle'})+T(x0+w*0.72,y+14,'Tanggal',{fs:8.5,a:'middle'})+T(x0+w*0.92,y+14,'Paraf',{fs:8.5,a:'middle'});y+=20;
+  const kh=1168-y-20-50-20-110-20-50;
+  for(let i=0;i<6;i++){const hh=kh/6;o+=R(x0,y,w*0.6,hh,'#fff',C.ink,0.5)+R(x0+w*0.6,y,w*0.24,hh,'#fff',C.ink,0.5)+R(x0+w*0.84,y,w*0.16,hh,'#fff',C.ink,0.5);y+=hh;}
+  band('JENIS GAMBAR');val('M E P',50,18);
+  o+=R(x0,y,w*0.75,20,'#fff',C.ink,0.8)+R(x0+w*0.75,y,w*0.25,20,'#fff',C.ink,0.8)+T(x0+w*0.375,y+14,'NAMA GAMBAR',{fs:9,a:'middle'})+T(x0+w*0.875,y+14,'SKALA',{fs:9,a:'middle'});y+=20;
+  o+=R(x0,y,w*0.75,110,'#fff',C.ink,0.8)+R(x0+w*0.75,y,w*0.25,110,'#fff',C.ink,0.8)
+    +T(x0+8,y+52,'INSTALASI VAC DUCTING',{fs:13})+T(x0+8,y+70,'LANTAI 1',{fs:13})+T(x0+w*0.875,y+60,'1:50',{fs:13,a:'middle'});y+=110;
+  const cw=[0.18,0.18,0.4,0.24];let cx=x0;
+  ['TAHUN','KODE','NO.GAMBAR','JLH. LEMBAR'].forEach((l,i)=>{o+=R(cx,y,w*cw[i],20,'#fff',C.ink,0.8)+T(cx+w*cw[i]/2,y+14,l,{fs:7.5,a:'middle'});cx+=w*cw[i];});y+=20;cx=x0;
+  [k.tahun,'MEP',k.no,'-'].forEach((l,i)=>{o+=R(cx,y,w*cw[i],50,'#fff',C.ink,0.8)+T(cx+w*cw[i]/2,y+30,l,{fs:i===2?13:10,a:'middle'});cx+=w*cw[i];});
+  return o;
+}
+
+function sheetSVG(Rz,forExport){
+  let o='';
+  o+=R(0,0,SH.W,SH.H,'#ffffff','none',0);
+  o+=R(10,10,SH.W-20,SH.H-20,'none',C.ink,2)+R(20,20,1322,1148,'none',C.ink,1);
+  o+=archSVG()+hvacSVG(Rz)+legendSVG()+titleSVG();
+  const by=1070;
+  o+=`<circle cx="${210}" cy="${by}" r="22" fill="#fff" stroke="${C.ink}" stroke-width="1.2"/>`+L(188,by,232,by,C.ink,0.8)+T(210,by-6,'NO.',{fs:8,a:'middle',b:1})+T(210,by+13,'VAC',{fs:8,a:'middle',b:1});
+  o+=T(242,by-4,'DENAH LANTAI 1, INSTALASI VAC DUCTING',{fs:18})+L(242,by+2,620,by+2,C.ink,1)+T(242,by+18,'S K A L A     1 : 50',{fs:10});
+  if(sel&&!forExport){const bb=selBox(Rz);if(bb)o+=R(bb[0]-6,bb[1]-6,bb[2]+12,bb[3]+12,'none',C.sel,1.5,' stroke-dasharray="5 3"');}
+  return forExport?`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SH.W} ${SH.H}" width="${SH.W}" height="${SH.H}" font-family="Arial, Helvetica, sans-serif">${o}</svg>`:o;
+}
+function selBox(Rz){
+  if(!sel)return null;
+  if(sel.type==='unit'){const uw=P(S.orient==='h'?0.7:1.4),uh=P(S.orient==='h'?1.4:0.7);return [X(S.unit.x)-uw/2,Y(S.unit.y)-uh/2,uw,uh];}
+  if(sel.type==='ret'){const rw=P((S.orient==='h'?Rz.rg[1]:Rz.rg[0])/1000),rh=P((S.orient==='h'?Rz.rg[0]:Rz.rg[1])/1000);return [X(S.ret.x)-rw/2,Y(S.ret.y)-rh/2,rw,rh];}
+  if(sel.type==='shaft')return [X(S.shaft.x)-P(0.2),Y(S.shaft.y)-P(0.2),P(0.4),P(0.4)];
+  if(sel.type==='ef'){const f=S.efs[sel.id];if(!f)return null;return [X(f.x)-P(0.225),Y(f.y)-P(0.225),P(0.45),P(0.45)];}
+  if(sel.type==='diff'){const b=Rz.brs.find(b=>b.d.id===sel.id);if(!b)return null;const s=P(b.size/1000);return [X(b.d.x)-s/2,Y(b.d.y)-s/2,s,s];}
+  return null;
+}
+
+// ---------- panel & tabel ----------
+function stat(v,l,cls=''){return `<div class="stat ${cls}"><b>${v}</b><small>${l}</small></div>`;}
+function renderSel(Rz){
+  const box=$('#selbox');
+  if(!sel){box.innerHTML='<b>Belum ada objek terpilih</b><span class="k">Klik IU, RBG, diffuser, EF, atau shaft di gambar.</span>';return;}
+  const pos=p=>`<span class="k">Posisi dari as A/3:</span> X ${f2(p.x)} m, Y ${f2(p.y)} m`;
+  if(sel.type==='unit')box.innerHTML=`<b>IU 1.1, ${S.pk} PK ducted</b>${pos(S.unit)}<br><span class="k">Kapasitas & airflow diubah di panel Unit AC.</span>`;
+  else if(sel.type==='ret')box.innerHTML=`<b>RBG ${Rz.rg[0]}x${Rz.rg[1]} mm</b>${pos(S.ret)}`;
+  else if(sel.type==='shaft')box.innerHTML=`<b>Shaft pipa refrigerant & drain</b>${pos(S.shaft)}`;
+  else if(sel.type==='diff'){const d=S.diffusers.find(d=>d.id===sel.id),b=Rz.brs.find(b=>b.d.id===sel.id);if(!d){sel=null;return renderSel(Rz);}
+    box.innerHTML=`<b>Sq.Diff D${S.diffusers.indexOf(d)+1} ${b.size}x${b.size} mm</b>${pos(d)}<br><span class="k">${Math.round(b.q)} cfm, flex Ø${b.D}, ${f1(b.L)} m</span><div class="btns"><button id="bDelD">Hapus diffuser</button></div>`;
+    $('#bDelD').onclick=delSel;}
+  else if(sel.type==='ef'){const f=S.efs[sel.id];
+    box.innerHTML=`<b>${esc(f.tag)}, ${esc(f.room)}</b>${pos(f)}
+      <div class="row"><label for="efc">Airflow (CFM)</label><input id="efc" type="number" step="50" min="50" value="${f.cfm}"></div>
+      <div class="row"><label for="efe">ESP (Pa)</label><input id="efe" type="number" step="10" min="10" value="${f.esp}"></div>`;
+    $('#efc').oninput=e=>{const v=parseFloat(e.target.value);if(v>0){f.cfm=v;render(false);save();}};
+    $('#efe').oninput=e=>{const v=parseFloat(e.target.value);if(v>0){f.esp=v;render(false);save();}};}
+}
+function render(full=true){
+  const Rz=compute();lastR=Rz;
+  $('#sheet').innerHTML=sheetSVG(Rz,false);
+  if(full)renderSel(Rz);
+  const util=Rz.load/Rz.cap*100;
+  $('#stats').innerHTML=
+    stat(f0(Rz.cap)+' BTU/h',`Kapasitas ${S.pk} PK (${f1(Rz.cap/12000)} TR)`)+
+    stat(f0(Rz.load)+' BTU/h',`Beban R. Makan ${f1(Rz.area)} m², utilisasi ${f0(util)}%`,util>100?'bad':util>=75?'good':'')+
+    stat(f0(S.cfm)+' CFM',`${f0(S.cfm*1.699)} m³/h, ${f0(Rz.cfmTR)} CFM/TR`)+
+    stat(Rz.n?f0(Rz.qd)+' CFM':'–',`Per diffuser (${Rz.n} titik)`)+
+    stat(Rz.n?f0(Rz.espEst)+' Pa':'–',`ESP estimasi vs unit ${f0(S.esp)} Pa`,Rz.espEst>S.esp?'bad':'good')+
+    stat(f0(Rz.faLs)+' L/s',`Fresh air (${f0(Rz.faLs*2.119)} CFM)`);
+  const W=[],O=[];
+  if(!Rz.n)W.push('Belum ada diffuser. Klik “Atur grid ulang” atau “Tambah diffuser”.');
+  if(util>100)W.push(`Beban estimasi melebihi kapasitas. Butuh ±${f1(Rz.load/9000)} PK.`);
+  else if(Rz.n)O.push(`Kapasitas ${S.pk} PK mencukupi untuk R. Makan ${f1(Rz.area)} m² dan ${S.occ} orang (butuh ±${f1(Rz.load/9000)} PK).`);
+  if(Rz.cfmTR<350||Rz.cfmTR>450)W.push(`Airflow ${f0(Rz.cfmTR)} CFM/TR di luar rentang umum 350–450.`);
+  if(Rz.n&&Rz.espEst>S.esp)W.push(`ESP estimasi ${f0(Rz.espEst)} Pa melebihi ESP unit ${f0(S.esp)} Pa.`);
+  if(S.ductH+150>S.plenum)W.push(`Ruang plafon ${S.plenum} mm kurang untuk trunk ${S.ductH} mm + insulasi + hanger.`);
+  Rz.segs.forEach(s=>{if(s.w/s.h>4)W.push(`${s.name}: aspect ratio ${f1(s.w/s.h)} > 4. Naikkan tinggi trunk.`);});
+  const ds=S.diffusers;
+  ds.forEach((d,i)=>{
+    if(Math.min(d.x-DB.x0,d.y-DB.y0,DB.x1-d.x,DB.y1-d.y)<0.5)W.push(`D${i+1} terlalu dekat dinding (< 0,5 m).`);
+    if(Math.hypot(d.x-S.ret.x,d.y-S.ret.y)<1.5)W.push(`D${i+1} terlalu dekat RBG (< 1,5 m), risiko short-circuit.`);
+    for(let j=i+1;j<ds.length;j++)if(Math.hypot(d.x-ds[j].x,d.y-ds[j].y)<1.5)W.push(`D${i+1} dan D${j+1} berjarak < 1,5 m.`);
+  });
+  if(Rz.n&&!W.length)O.push('Semua cek kecepatan, ESP, ruang plafon, dan jarak diffuser lolos.');
+  $('#msgs').innerHTML=W.map(t=>`<li class="w">${t}</li>`).join('')+O.map(t=>`<li class="o">${t}</li>`).join('');
+
+  const ps=pipeSize(S.pk),btu=S.pk*9000;
+  $('#tAc').innerHTML=`<tr><th rowspan="2">No unit</th><th rowspan="2">Location / room</th><th rowspan="2">Unit type</th><th rowspan="2">Qty</th><th colspan="3">Total cooling capacity</th><th>Airflow</th><th colspan="2">Pipe size</th><th>Electric</th></tr>
+    <tr><th>HP/PK</th><th>BTUH</th><th>kW</th><th>CFM</th><th>Gas (mm)</th><th>Liquid (mm)</th><th>V/ph/Hz</th></tr>
+    <tr class="sec"><td></td><td colspan="10">LANTAI 1</td></tr>
+    <tr><td>IU 1.1</td><td>R. Makan</td><td class="c">Medium Static Split Duct</td><td class="c">1</td><td class="c">${S.pk}</td><td class="n">${btu}</td><td class="n">${f2(btu*0.000293071)}</td><td class="n">${Math.round(S.cfm)}</td><td class="c">${f2(ps[0])}</td><td class="c">${f2(ps[1])}</td><td class="c">220/1/50</td></tr>
+    <tr><td>OU 1</td><td>Atap</td><td class="c">Outdoor Unit Split Duct</td><td class="c">1</td><td class="c">${S.pk}</td><td class="n">${btu}</td><td class="n">${f2(btu*0.000293071)}</td><td class="c">-</td><td class="c">-</td><td class="c">-</td><td class="c">380/3/50</td></tr>`;
+  $('#tFan').innerHTML=`<tr><th>No unit</th><th>Location / room</th><th>Unit type</th><th>Qty</th><th>Airflow (CFM)</th><th>ESP (Pa)</th><th>Duct (mm)</th><th>Electric</th></tr><tr class="sec"><td></td><td colspan="7">LANTAI 1</td></tr>`+
+    Rz.exs.map(e=>`<tr><td>${esc(e.f.tag)}</td><td>${esc(e.f.room)}</td><td class="c">${esc(e.f.type)}</td><td class="c">1</td><td class="n">${e.f.cfm}</td><td class="n">${e.f.esp}</td><td class="c">${Math.round(e.w*1000)}x${Math.round(e.h*1000)}</td><td class="c">220/1/50</td></tr>`).join('');
+  $('#tSeg').innerHTML='<tr><th>Segmen</th><th>Panjang (m)</th><th>CFM</th><th>W×H (mm)</th><th>V (m/s)</th><th>Gesekan (Pa/m)</th></tr>'+
+    Rz.segs.map(s=>`<tr><td>${s.name}</td><td class="n">${f1(s.len)}</td><td class="n">${f0(s.q)}</td><td class="c">${Math.round(s.w*1000)}×${Math.round(s.h*1000)}</td><td class="n">${f1(s.v)}</td><td class="n">${f2(s.fr)}</td></tr>`).join('')+
+    Rz.exs.map(e=>`<tr><td>${esc(e.f.tag)} exhaust</td><td class="n">${f1(e.len)}</td><td class="n">${f0(e.f.cfm)}</td><td class="c">${Math.round(e.w*1000)}×${Math.round(e.h*1000)}</td><td class="n">${f1(e.v)}</td><td class="n">–</td></tr>`).join('');
+
+  const bom=[],tr={};let tLen=0,ins=0;
+  Rz.segs.forEach(s=>{const k=`${Math.round(s.w*1000)}x${Math.round(s.h*1000)}`;tr[k]=(tr[k]||0)+s.len;tLen+=s.len;ins+=2*(s.w+s.h)*s.len*1.1;});
+  Object.entries(tr).forEach(([k,v])=>bom.push([`Duct supply galvanis ${k} mm`,f1(Math.ceil(v*2)/2),'m']));
+  if(Rz.n)bom.push(['Supply plenum + transisi dari unit','1','set']);
+  const fx={},cl={};Rz.brs.forEach(b=>{fx[b.D]=(fx[b.D]||0)+b.L;cl[b.D]=(cl[b.D]||0)+1;});
+  Object.keys(fx).sort((a,b)=>a-b).forEach(D=>bom.push([`Flexible duct insulated Ø${D}`,f1(Math.ceil(fx[D]*2)/2),'m']));
+  Object.keys(cl).sort((a,b)=>a-b).forEach(D=>bom.push([`Starting collar + volume damper Ø${D}`,String(cl[D]),'pcs']));
+  const dz={};Rz.brs.forEach(b=>{dz[b.size]=(dz[b.size]||0)+1;});
+  Object.keys(dz).sort((a,b)=>a-b).forEach(z=>bom.push([`Sq.Diff 4-way ${z}x${z} mm`,String(dz[z]),'pcs']));
+  bom.push([`RBG ${Rz.rg[0]}x${Rz.rg[1]} mm + plenum box`,'1','set']);
+  if(tLen)bom.push(['Hanger + threaded rod (tiap 1,5 m)',String(Math.ceil(tLen/1.5)+Rz.sides),'set']);
+  if(ins)bom.push(['Insulasi duct supply 25 mm',f1(Math.ceil(ins)),'m²']);
+  const ex={};Rz.exs.forEach(e=>{const k=`${Math.round(e.w*1000)}x${Math.round(e.h*1000)}`;ex[k]=(ex[k]||0)+e.len;});
+  Object.entries(ex).forEach(([k,v])=>bom.push([`Duct exhaust galvanis ${k} mm`,f1(Math.ceil(v*2)/2),'m']));
+  Rz.exs.forEach(e=>bom.push([`${e.f.tag} ${e.f.type} ${e.f.cfm} cfm`,'1','unit']));
+  bom.push(['EAL (exhaust air louver)',String(Rz.exs.length),'pcs']);
+  const pl=Math.abs(S.unit.x-S.shaft.x)+Math.abs(S.unit.y-S.shaft.y);
+  bom.push([`Pipa refrigerant G Ø${f2(ps[0])} / L Ø${f2(ps[1])} (s.d. shaft)`,f1(Math.ceil(pl*2)/2),'m']);
+  bom.push(['Pipa drain c/w insulasi (s.d. shaft)',f1(Math.ceil(pl*2)/2),'m']);
+  lastBom=bom;
+  $('#tBom').innerHTML='<tr><th>Item</th><th>Qty</th><th>Satuan</th></tr>'+bom.map(r=>`<tr><td>${esc(r[0])}</td><td class="n">${r[1]}</td><td class="c">${r[2]}</td></tr>`).join('');
+}
+
+// ---------- interaksi ----------
+function syncInputs(){
+  document.querySelectorAll('[data-k]').forEach(i=>{i.value=S[i.dataset.k];});
+  document.querySelectorAll('[data-kop]').forEach(i=>{i.value=S.kop[i.dataset.kop];});
+  $('#orient').value=S.orient;
+}
+document.querySelectorAll('[data-k]').forEach(inp=>{
+  inp.addEventListener('input',()=>{
+    const v=parseFloat(inp.value),k=inp.dataset.k;if(isNaN(v)||(v<=0&&k!=='occ'))return;
+    S[k]=(k==='rows'||k==='cols')?Math.round(v):v;
+    if(k==='rows'||k==='cols')autoLayout();
+    render();save();
+  });
+});
+document.querySelectorAll('[data-kop]').forEach(inp=>inp.addEventListener('input',()=>{S.kop[inp.dataset.kop]=inp.value;render(false);save();}));
+$('#orient').addEventListener('change',e=>{S.orient=e.target.value;placeUnit();autoLayout();sel=null;render();save();});
+$('#bAuto').addEventListener('click',()=>{autoLayout();render();save();});
+$('#bAdd').addEventListener('click',()=>{
+  const id=S.diffusers.reduce((m,d)=>Math.max(m,d.id),0)+1,p={id,x:4.0,y:6.4};inDB(p);
+  S.diffusers.push(p);sel={type:'diff',id};render();save();
+});
+function delSel(){if(!sel||sel.type!=='diff')return;S.diffusers=S.diffusers.filter(d=>d.id!==sel.id);sel=null;render();save();}
+$('#bReset').addEventListener('click',()=>{S=clone(DEF);autoLayout();sel=null;syncInputs();render();save();});
+document.addEventListener('keydown',e=>{if((e.key==='Delete'||e.key==='Backspace')&&!/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)){if(sel&&sel.type==='diff'){e.preventDefault();delSel();}}});
+
+const svg=$('#sheet');
+function toWorld(e){const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const p=pt.matrixTransform(svg.getScreenCTM().inverse());return {x:(p.x-SH.ox)/SH.s,y:(p.y-SH.oy)/SH.s};}
+svg.addEventListener('pointerdown',e=>{
+  const t=e.target.closest('[data-drag]');
+  if(!t){if(sel){sel=null;render();}return;}
+  const type=t.dataset.drag,id=type==='diff'||type==='ef'?+t.dataset.id:undefined;
+  sel={type,id};drag={type,id};
+  svg.setPointerCapture(e.pointerId);e.preventDefault();render();
+});
+svg.addEventListener('pointermove',e=>{
+  if(!drag)return;const p=toWorld(e);
+  let obj;
+  if(drag.type==='unit')obj=S.unit;else if(drag.type==='ret')obj=S.ret;else if(drag.type==='shaft')obj=S.shaft;
+  else if(drag.type==='ef')obj=S.efs[drag.id];else obj=S.diffusers.find(d=>d.id===drag.id);
+  if(!obj)return;
+  obj.x=snap(p.x);obj.y=snap(p.y);
+  if(drag.type==='ef'||drag.type==='shaft'){obj.x=clamp(obj.x,0.3,BLD.L-0.3);obj.y=clamp(obj.y,0.3,BLD.W-0.3);}else inDB(obj);
+  render();
+});
+const endDrag=()=>{if(drag){drag=null;save();}};
+svg.addEventListener('pointerup',endDrag);svg.addEventListener('pointercancel',endDrag);
+
+function applyZoom(){
+  if(zoom===0){svg.style.width='100%';svg.style.minWidth='700px';svg.style.height='auto';}
+  else{svg.style.width=(SH.W*zoom)+'px';svg.style.minWidth='0';svg.style.height='auto';}
+}
+$('#zFit').onclick=()=>{zoom=0;applyZoom();};
+$('#zIn').onclick=()=>{const cur=zoom||svg.getBoundingClientRect().width/SH.W;zoom=Math.min(3,cur*1.25);applyZoom();};
+$('#zOut').onclick=()=>{const cur=zoom||svg.getBoundingClientRect().width/SH.W;zoom=Math.max(0.3,cur/1.25);applyZoom();};
+
+// ---------- export ----------
+(async()=>{
+  const msg=$('#exMsg');let dl=null;
+  try{dl=window.claude&&await claude.use('downloads');}catch(e){}
+  if(!dl){ // mode standalone (di luar claude.ai): unduh lewat link biasa
+    dl={save:({filename,data})=>new Promise(res=>{const b=data instanceof Blob?data:new Blob([data],{type:filename.endsWith('.svg')?'image/svg+xml':'application/octet-stream'});
+      const u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);res({status:'saved'});})};
+  }
+  const bP=$('#bPng'),bS=$('#bSvg');bP.hidden=false;bS.hidden=false;
+  const fname=()=>(S.kop.no||'VAC-D-201').replace(/[^\w\-]+/g,'-');
+  const done=p=>p.then(()=>{msg.textContent='File tersimpan.';}).catch(e=>{msg.textContent=e&&e.code==='declined'?'Unduhan dibatalkan.':'Unduhan gagal: '+(e&&e.message||e);});
+  bS.onclick=()=>{done(dl.save({filename:fname()+'.svg',data:sheetSVG(lastR||compute(),true)}));};
+  bP.onclick=()=>{
+    msg.textContent='Menyiapkan PNG…';
+    const img=new Image(),k=2.5;
+    img.onload=()=>{const c=document.createElement('canvas');c.width=SH.W*k;c.height=SH.H*k;const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,c.width,c.height);g.drawImage(img,0,0,c.width,c.height);
+      c.toBlob(b=>{if(!b){msg.textContent='Gagal membuat PNG.';return;}done(dl.save({filename:fname()+'.png',data:b}));},'image/png');};
+    img.onerror=()=>{msg.textContent='Gagal membuat PNG.';};
+    img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(sheetSVG(lastR||compute(),true));
+  };
+})();
+
+// ---------- riwayat (history) ----------
+const HKEY=KEY+'-history',HMAX=50;
+let H=[],hCur=null;
+function hLoad(){try{const t=localStorage.getItem(HKEY);const a=t?JSON.parse(t):[];H=Array.isArray(a)?a.filter(h=>h&&h.id&&normState(h.state)):[];}catch(e){H=[];}}
+function hStore(){try{localStorage.setItem(HKEY,JSON.stringify(H));return true;}catch(e){hNote('Gagal menyimpan riwayat (penyimpanan browser penuh atau diblokir). Gunakan Ekspor JSON.');return false;}}
+function hNote(t){$('#hMsg').textContent=t;}
+const fDate=ts=>new Date(ts).toLocaleString('id-ID',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+function hSummary(s){return `${s.pk} PK, ${s.cfm} CFM, ${s.diffusers.length} diffuser, trunk ${s.orient==='h'?'horizontal':'vertikal'}`;}
+function hRender(){
+  const ul=$('#hList');
+  if(!H.length){ul.innerHTML='<li><span class="k">Belum ada versi tersimpan.</span></li>';return;}
+  ul.innerHTML=H.map(h=>`<li class="${h.id===hCur?'cur':''}"><b>${esc(h.name)}</b><span class="k">${esc(fDate(h.ts))} · ${esc(hSummary(h.state))}</span>
+    <div class="btns"><button data-h="load" data-id="${h.id}">Muat</button><button data-h="over" data-id="${h.id}">Timpa</button><button data-h="ren" data-id="${h.id}">Ganti nama</button><button data-h="del" data-id="${h.id}">Hapus</button></div></li>`).join('');
+}
+function hApply(st){S=normState(st);sel=null;drag=null;syncInputs();render();save();}
+$('#hList').addEventListener('click',e=>{
+  const b=e.target.closest('button[data-h]');if(!b)return;
+  const h=H.find(x=>x.id===b.dataset.id);if(!h)return;
+  if(b.dataset.h==='load'){
+    if(!confirm(`Muat versi "${h.name}"? Kondisi gambar saat ini akan diganti (simpan dulu ke riwayat bila perlu).`))return;
+    hApply(h.state);hCur=h.id;hNote(`Versi "${h.name}" dimuat.`);
+  }else if(b.dataset.h==='over'){
+    if(!confirm(`Timpa versi "${h.name}" dengan kondisi gambar saat ini?`))return;
+    h.state=clone(S);h.ts=Date.now();hCur=h.id;if(hStore())hNote(`Versi "${h.name}" diperbarui.`);
+  }else if(b.dataset.h==='ren'){
+    const n=prompt('Nama baru versi:',h.name);if(n==null||!n.trim())return;
+    h.name=n.trim().slice(0,80);if(hStore())hNote('Nama versi diubah.');
+  }else if(b.dataset.h==='del'){
+    if(!confirm(`Hapus versi "${h.name}" dari riwayat?`))return;
+    H=H.filter(x=>x!==h);if(hCur===h.id)hCur=null;if(hStore())hNote('Versi dihapus.');
+  }
+  hRender();
+});
+$('#bHSave').addEventListener('click',()=>{
+  const inp=$('#hName'),name=(inp.value.trim()||`${S.kop.no||'VAC'} – ${fDate(Date.now())}`).slice(0,80);
+  const h={id:'h'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),name,ts:Date.now(),state:clone(S)};
+  H.unshift(h);if(H.length>HMAX)H=H.slice(0,HMAX);
+  hCur=h.id;inp.value='';
+  if(hStore())hNote(`Tersimpan sebagai "${name}". Maks. ${HMAX} versi.`);
+  hRender();
+});
+$('#hName').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('#bHSave').click();}});
+$('#bHExp').addEventListener('click',()=>{
+  const data=JSON.stringify({app:'duct-resto-shop',version:2,exported:new Date().toISOString(),current:S,history:H},null,2);
+  const b=new Blob([data],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');
+  a.href=u;a.download=`riwayat-${(S.kop.no||'VAC-D-201').replace(/[^\w\-]+/g,'-')}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);
+  hNote(`Riwayat (${H.length} versi) diekspor ke JSON.`);
+});
+$('#bHImp').addEventListener('click',()=>$('#hFile').click());
+$('#hFile').addEventListener('change',e=>{
+  const file=e.target.files&&e.target.files[0];e.target.value='';if(!file)return;
+  const rd=new FileReader();
+  rd.onload=()=>{
+    try{
+      const o=JSON.parse(rd.result);
+      const list=Array.isArray(o)?o:Array.isArray(o.history)?o.history:[];
+      const ids=new Set(H.map(h=>h.id));let n=0;
+      list.forEach(h=>{if(h&&normState(h.state)){const it={id:h.id&&!ids.has(h.id)?String(h.id):'h'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),name:String(h.name||'Versi impor').slice(0,80),ts:+h.ts||Date.now(),state:h.state};ids.add(it.id);H.push(it);n++;}});
+      if(!n&&normState(o)){H.push({id:'h'+Date.now().toString(36),name:'Impor '+file.name.slice(0,60),ts:Date.now(),state:o});n=1;}
+      if(!n){hNote('File tidak berisi riwayat yang valid.');return;}
+      H.sort((a,b)=>b.ts-a.ts);if(H.length>HMAX)H=H.slice(0,HMAX);
+      if(hStore())hNote(`${n} versi diimpor.`);hRender();
+    }catch(err){hNote('Gagal membaca file JSON.');}
+  };
+  rd.readAsText(file);
+});
+
+S=load();if(!S){S=clone(DEF);autoLayout();}
+hLoad();hRender();
+syncInputs();applyZoom();render();
+</script>
+</body>
+</html>
